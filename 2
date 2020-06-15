@@ -1,0 +1,13 @@
+
+          function myFn(str, numberOfWords) { 
+  let index;
+  for (let i = 0; i < numberOfWords; i++) {
+    index = str.indexOf(' ', index + 1);
+  }
+  return str.substring(0, index);
+}
+
+var _title_product = document.querySelector('.product-single__title-text');
+
+var _title_product_short = myFn(_title_product.innerHTML, 2);
+ 
